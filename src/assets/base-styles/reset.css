@@ -24,8 +24,9 @@ select {
   line-height: normal;
 }
 
-/* remove vertical white space on label and button element */
+/* remove vertical white space on label, list, and button element */
 label,
+li,
 button {
   text-box: trim-both cap text;
 }
