@@ -1,0 +1,8 @@
+.root {
+  min-block-size: 100svh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  padding-inline: 1.5rem;
+  padding-block-start: 1.5rem;
+  padding-block-end: 0.5rem;
+}
