@@ -1,0 +1,43 @@
+.hamburger-menu {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  border: none;
+  background-color: inherit;
+
+  @media (width > 42rem) {
+    display: none;
+  }
+}
+
+.hamburger-menu__icon {
+  block-size: 3px;
+  inline-size: 1.6rem;
+  background-color: var(--neutral-dark-grayish-blue);
+  translate: 0 0;
+  rotate: 0deg;
+  transition:
+    translate 0.4s ease-in-out,
+    rotate 0.4s ease-in-out,
+    scale 0.4s ease-in-out;
+}
+
+/* tambahkan data- attribute ke .navbar */
+[data-menu-is-open="true"] ~ .hamburger-menu {
+  .hamburger-menu__icon:first-child {
+    translate: 0 0.6rem;
+    rotate: -45deg;
+  }
+
+  .hamburger-menu__icon:nth-child(2) {
+    scale: 0;
+  }
+
+  .hamburger-menu__icon:last-child {
+    translate: 0 -0.6rem;
+    rotate: 45deg;
+  }
+}

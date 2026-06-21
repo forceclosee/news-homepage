@@ -1,5 +1,6 @@
 .root {
   min-block-size: 100svh;
+  position: relative;
   display: grid;
   grid-template-rows: auto 1fr auto;
   justify-items: center;
@@ -8,4 +9,5 @@
   padding-inline: 1rem;
   padding-block-start: 1.5rem;
   padding-block-end: 0.5rem;
+  overflow-x: hidden;
 }
