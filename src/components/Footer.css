@@ -1,6 +1,7 @@
 .footer {
-  font-size: 0.6875rem;
   color: var(--neutral-dark-grayish-blue);
+  text-align: center;
+  font-size: 0.6875rem;
 }
 
 .footer a {
