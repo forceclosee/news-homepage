@@ -1,0 +1,22 @@
+.news-content {
+  display: grid;
+  gap: 3rem;
+  grid-template-areas: "hero";
+  max-inline-size: 30rem;
+  margin-inline: auto;
+
+  @media (width >= 48rem) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "hero hero";
+    max-inline-size: 48rem;
+  }
+
+  @media (width >= 64rem) {
+    grid-template-columns: repeat(3, 1fr);
+    max-inline-size: 70rem;
+  }
+}
+
+.news-content__hero {
+  grid-area: hero;
+}

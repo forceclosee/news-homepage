@@ -1,0 +1,59 @@
+.hero {
+  container-name: hero;
+  container-type: inline-size;
+
+  display: grid;
+  gap: 1.8rem;
+}
+
+.hero__details {
+  display: grid;
+  column-gap: 2rem;
+
+  @container hero (width > 40rem) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.hero__image {
+  inline-size: 100%;
+  block-size: auto;
+}
+
+.hero__title {
+  color: var(--neutral-very-dark-blue);
+  font-size: clamp(2.5rem, 1.546rem + 4.07vi, 3.5rem);
+  font-weight: 800;
+  line-height: 1;
+  text-box: trim-both cap alphabetic;
+
+  @container hero (width > 40rem) {
+    grid-row: span 2;
+  }
+}
+
+.hero__description {
+  color: var(--neutral-dark-grayish-blue);
+  margin-block-start: 1.3em;
+  font-size: 0.94rem;
+  font-weight: 500;
+  line-height: 1.7;
+
+  @container hero (width > 40rem) {
+    margin-block-start: 0;
+  }
+}
+
+.button {
+  block-size: 3rem;
+  inline-size: 11.5rem;
+  background-color: var(--primary-soft-red);
+  color: var(--neutral-very-dark-blue);
+  border: none;
+  margin-block-start: clamp(1.7em, 1.1414em + 1.1vi, 2em);
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  text-box: trim-both cap alphabetic;
+}

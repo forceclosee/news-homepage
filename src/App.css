@@ -3,8 +3,7 @@
   position: relative;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  justify-items: center;
-  gap: 1.5rem;
+  gap: clamp(1.5rem, 0.344rem + 4.93vi, 3.5rem);
   background-color: var(--neutral-off-white);
   padding-inline: 1rem;
   padding-block-start: 1.5rem;
