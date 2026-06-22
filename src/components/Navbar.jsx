@@ -1,37 +1,22 @@
 import HamburgerMenu from "./HamburgerMenu";
+
+import { navLink } from "../data/data";
+
 import "./Navbar.css";
 
 export default function Navbar() {
+  const listLinks = navLink.map((link) => (
+    <li className="navbar__list-item" key={link.id}>
+      <a className="navbar__link" href="">
+        {link.content}
+      </a>
+    </li>
+  ));
+
   return (
     <>
       <nav className="navbar">
-        <ul className="navbar__list">
-          <li className="navbar__list-item">
-            <a className="navbar__link" href="">
-              Home
-            </a>
-          </li>
-          <li className="navbar__list-item">
-            <a className="navbar__link" href="">
-              New
-            </a>
-          </li>
-          <li className="navbar__list-item">
-            <a className="navbar__link" href="">
-              Popular
-            </a>
-          </li>
-          <li className="navbar__list-item">
-            <a className="navbar__link" href="">
-              Trending
-            </a>
-          </li>
-          <li className="navbar__list-item">
-            <a className="navbar__link" href="">
-              Categories
-            </a>
-          </li>
-        </ul>
+        <ul className="navbar__list">{listLinks}</ul>
       </nav>
       <HamburgerMenu />
     </>
