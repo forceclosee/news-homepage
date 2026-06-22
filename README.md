@@ -42,6 +42,7 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - CSS custom properties
+- BEM (Block Element Modifier) methodology
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
@@ -63,16 +64,15 @@ Users should be able to:
 
 ### AI Collaboration
 
-I collaborated with Antigravity, an AI coding assistant developed by Google DeepMind. Antigravity acted as a supportive mentor, guiding me through debugging layout problems and explaining layout concepts rather than providing copy-paste solutions.
+I collaborated with Antigravity, an AI coding assistant developed by Google DeepMind. Antigravity acted as a supportive mentor, guiding me through debugging layout problems, calculating fluid typography values, and explaining layout concepts rather than providing copy-paste solutions.
 
 **How I used it:**
 
 - **Responsive Navbar:** Refactored the desktop layout to resolve vertical height alignment and horizontal overflow issues caused by mobile-first inherited styles
-- **State-Driven Animation:** Configured custom data attributes (`data-menu-is-open`) and sibling selectors (`~`) to animate both the drawer and the hamburger button's transition to an 'X' icon
 - **Discrete Transitions:** Fixed transition bugs with `@starting-style` and `allow-discrete` by separating layout properties from transitionable properties
-- **Scrollbar Containment:** Debugged overflow issues during transitions by applying `position: relative` containing block and `overflow-x: hidden` to the `.root` element
+- **Fluid Typography (CSS `clamp()`):** Calculated preferred values using slope and offset mathematical formulas to achieve smooth scaling across viewports, using a combination of `em`/`rem` and viewport inline (`vi`) units
 
-Collaborating with the AI helped me better understand layout container structures, CSS specificity, modern transition mechanics, and accessibility best practices.
+Collaborating with the AI helped me better understand layout container structures, CSS specificity, modern transition mechanics, the mathematics of fluid typography, and accessibility best practices.
 
 ## Author
 
