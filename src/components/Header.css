@@ -1,11 +1,9 @@
 .header {
-  border: solid 1px var(--neutral-very-dark-blue);
   inline-size: 100%;
   color: var(--neutral-dark-grayish-blue);
 }
 
 .header__wrapper {
-  border: solid 1px var(--primary-soft-red);
   display: flex;
   align-items: center;
   gap: 1rem;
