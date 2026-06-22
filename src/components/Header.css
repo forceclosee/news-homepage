@@ -8,8 +8,16 @@
   align-items: center;
   gap: 1rem;
   block-size: 2.625rem;
-  max-inline-size: 70rem;
+  max-inline-size: 30rem;
   margin-inline: auto;
+
+  @media (width >= 48rem) {
+    max-inline-size: 48rem;
+  }
+
+  @media (width >= 64rem) {
+    max-inline-size: 70rem;
+  }
 }
 
 .header__logo {
