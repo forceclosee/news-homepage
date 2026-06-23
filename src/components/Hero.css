@@ -3,7 +3,12 @@
   container-type: inline-size;
 
   display: grid;
-  gap: 1.8rem;
+  gap: 1.9rem;
+}
+
+.hero__image {
+  inline-size: 100%;
+  block-size: auto;
 }
 
 .hero__details {
@@ -13,11 +18,6 @@
   @container hero (width > 40rem) {
     grid-template-columns: repeat(2, 1fr);
   }
-}
-
-.hero__image {
-  inline-size: 100%;
-  block-size: auto;
 }
 
 .hero__title {
@@ -35,9 +35,6 @@
 .hero__description {
   color: var(--neutral-dark-grayish-blue);
   margin-block-start: 1.3em;
-  font-size: 0.94rem;
-  font-weight: 500;
-  line-height: 1.7;
 
   @container hero (width > 40rem) {
     margin-block-start: 0;

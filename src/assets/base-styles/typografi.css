@@ -16,3 +16,9 @@ h5,
 h6 {
   text-wrap: balance;
 }
+
+p {
+  font-size: 0.93rem;
+  font-weight: 400;
+  line-height: 1.7;
+}

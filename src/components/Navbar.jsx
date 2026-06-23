@@ -5,7 +5,7 @@ import { navLink } from "../data/data";
 import "./Navbar.css";
 
 export default function Navbar() {
-  const listLinks = navLink.map((link) => (
+  const linkLists = navLink.map((link) => (
     <li className="navbar__list-item" key={link.id}>
       <a className="navbar__link" href="">
         {link.content}
@@ -16,7 +16,7 @@ export default function Navbar() {
   return (
     <>
       <nav className="navbar">
-        <ul className="navbar__list">{listLinks}</ul>
+        <ul className="navbar__list">{linkLists}</ul>
       </nav>
       <HamburgerMenu />
     </>
