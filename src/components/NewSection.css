@@ -1,0 +1,37 @@
+.new-section {
+  background-color: var(--neutral-very-dark-blue);
+  padding-block: 1.8rem;
+  padding-inline: 1.3rem;
+}
+
+.new-section__title {
+  color: var(--primary-soft-orange);
+  font-size: 2rem;
+  font-size: 2.5rem;
+  font-size: clamp(2rem, 1.5229rem + 2.0356vi, 2.5rem);
+  font-weight: 600;
+  margin-block-end: 2.7rem;
+  text-box: trim-both cap alphabetic;
+}
+
+.new-card {
+  text-box: trim-both cap text;
+
+  &:not(:last-child) {
+    border-block-end: solid 1px var(--neutral-dark-grayish-blue);
+    padding-block-end: 2rem;
+    margin-block-end: 2.25rem;
+  }
+}
+
+.new-card__title {
+  color: var(--neutral-off-white);
+  font-size: 1.27rem;
+  font-weight: 650;
+}
+
+.new-card__content {
+  /* kurangi opacity pake colormix */
+  color: var(--neutral-grayish-blue);
+  margin-block-start: 0.5em;
+}
