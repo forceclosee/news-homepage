@@ -44,13 +44,29 @@
 .button {
   block-size: 3rem;
   inline-size: 11.5rem;
-  background-color: var(--primary-soft-red);
   color: var(--neutral-very-dark-blue);
   border: none;
   margin-block-start: clamp(1.7em, 1.1414em + 1.1vi, 2em);
+  cursor: pointer;
   font-size: 0.9rem;
   font-weight: 800;
   letter-spacing: 0.3em;
   text-transform: uppercase;
   text-box: trim-both cap alphabetic;
+  background: linear-gradient(var(--neutral-very-dark-blue) 0 0) left /
+    var(--d, 0%) 100% no-repeat;
+  background-color: var(--primary-soft-red);
+  transition: 0.5s;
+
+  &:hover {
+    @media (hover: hover) {
+      --d: 100%;
+      color: var(--neutral-off-white);
+    }
+  }
+
+  &:focus-visible {
+    --d: 100%;
+    color: var(--neutral-off-white);
+  }
 }

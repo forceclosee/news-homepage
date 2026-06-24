@@ -14,7 +14,11 @@ export default function FeaturedArticles({ className = "" }) {
       />
       <div className="article-card__detail-wrapper">
         <p className="article-card__ranking">{card.ranking}</p>
-        <h3 className="article-card__title">{card.title}</h3>
+        <h2 className="article-card__title">
+          <a className="article-card__title-link" href="#">
+            {card.title}
+          </a>
+        </h2>
         <p className="article-card__content">{card.content}</p>
       </div>
     </article>
