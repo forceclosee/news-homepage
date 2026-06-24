@@ -1,0 +1,39 @@
+.featured-articles {
+  display: grid;
+  gap: 2rem;
+
+  @media (width >= 64rem) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.article-card {
+  display: grid;
+  grid-template-columns: 6.2988rem auto;
+  column-gap: 1.5rem;
+}
+
+.article-card__image {
+  block-size: 100%;
+  inline-size: auto;
+  object-fit: cover;
+}
+
+.article-card__detail-wrapper {
+  display: grid;
+  grid-template-rows: 1fr auto auto;
+  > * + * {
+    margin-block-start: 0.5em;
+  }
+}
+
+.article-card__ranking {
+  font-size: 2rem;
+  font-weight: 700;
+  text-box: trim-both cap alphabetic;
+}
+
+.article-card__title {
+  font-weight: 800;
+  font-size: 1.125rem;
+}

@@ -4,7 +4,8 @@
   row-gap: 4rem;
   grid-template-areas:
     "hero"
-    "new-section";
+    "new-section"
+    "featured-articles";
   max-inline-size: 30rem;
   margin-inline: auto;
 
@@ -12,7 +13,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
       "hero         hero"
-      "new-section  trending-section";
+      "new-section  featured-articles";
     max-inline-size: 48rem;
   }
 
@@ -20,7 +21,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
       "hero              hero              new-section"
-      "trending-section  trending-section  trending-section";
+      "featured-articles  featured-articles  featured-articles";
     max-inline-size: 69.5rem;
   }
 }
@@ -31,4 +32,8 @@
 
 .news-content__new-section {
   grid-area: new-section;
+}
+
+.news-content__featured-articles {
+  grid-area: featured-articles;
 }
