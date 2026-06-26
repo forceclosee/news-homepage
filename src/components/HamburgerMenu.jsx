@@ -13,7 +13,8 @@ export default function HamburgerMenu() {
       type="button"
       onClick={handleClick}
       className="hamburger-menu"
-      aria-label="Open menu">
+      aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+      aria-expanded={isMenuOpen}>
       <div className="hamburger-menu__icon" aria-hidden="true"></div>
       <div className="hamburger-menu__icon" aria-hidden="true"></div>
       <div className="hamburger-menu__icon" aria-hidden="true"></div>
