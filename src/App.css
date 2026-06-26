@@ -9,4 +9,19 @@
   padding-block-start: 1.2rem;
   padding-block-end: 0.5rem;
   overflow-x: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+.root:has([inert]) {
+  background-color: var(--neutral-grayish-blue);
+  opacity: 80%;
+  filter: grayscale(10%);
+}
+
+.main {
+  transition: all 0.2s ease-in-out;
+}
+
+[inert] {
+  filter: blur(2px);
 }

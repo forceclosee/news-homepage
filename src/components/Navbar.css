@@ -5,6 +5,7 @@
   translate: 100% 0;
   inset: 0;
   max-inline-size: 16rem;
+  background-color: var(--neutral-white);
   margin-inline-start: auto;
   padding-block-start: 8.25rem;
   transition:
@@ -25,8 +26,7 @@
   }
 }
 
-/* tambahkan data- attribute ke .navbar */
-[data-menu-is-open="true"] {
+[data-is-menu-open="true"] {
   display: block;
   translate: 0 0;
 

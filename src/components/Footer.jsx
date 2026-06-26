@@ -1,8 +1,14 @@
+import { useContext } from "react";
+
+import { MenuContext } from "../context/MenuContext";
+
 import "./Footer.css";
 
 export default function Footer() {
+  const { isMenuOpen, setIsMenuOpen } = useContext(MenuContext);
+
   return (
-    <footer className="footer">
+    <footer className="footer" inert={isMenuOpen}>
       <p>
         Challenge by{" "}
         <a

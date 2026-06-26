@@ -1,11 +1,22 @@
+import { useContext } from "react";
+
+import { MenuContext } from "../context/MenuContext";
+
 import "./HamburgerMenu.css";
 
 export default function HamburgerMenu() {
+  const { isMenuOpen, setIsMenuOpen } = useContext(MenuContext);
+  const handleClick = () => setIsMenuOpen(!isMenuOpen);
+
   return (
-    <button type="button" className="hamburger-menu">
-      <div className="hamburger-menu__icon"></div>
-      <div className="hamburger-menu__icon"></div>
-      <div className="hamburger-menu__icon"></div>
+    <button
+      type="button"
+      onClick={handleClick}
+      className="hamburger-menu"
+      aria-label="Open menu">
+      <div className="hamburger-menu__icon" aria-hidden="true"></div>
+      <div className="hamburger-menu__icon" aria-hidden="true"></div>
+      <div className="hamburger-menu__icon" aria-hidden="true"></div>
     </button>
   );
 }

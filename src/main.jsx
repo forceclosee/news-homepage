@@ -8,9 +8,12 @@ import App from "./App.jsx";
 
 // css
 import "./assets/base-styles/base.css";
+import { MenuProvider } from "./context/MenuContext.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <App />
+    <MenuProvider>
+      <App />
+    </MenuProvider>
   </StrictMode>,
 );

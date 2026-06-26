@@ -2,6 +2,7 @@
   color: var(--neutral-dark-grayish-blue);
   text-align: center;
   font-size: 0.6875rem;
+  transition: all 0.2s ease-in-out;
 }
 
 .footer a {

@@ -1,4 +1,5 @@
 .header {
+  z-index: 1;
   inline-size: 100%;
   color: var(--neutral-dark-grayish-blue);
 }
