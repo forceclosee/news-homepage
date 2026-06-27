@@ -9,7 +9,7 @@
   border: none;
   background-color: inherit;
 
-  @media (width > 48rem) {
+  @media (width >= 48rem) {
     display: none;
   }
 }
