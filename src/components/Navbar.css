@@ -1,6 +1,6 @@
 .navbar {
   flex-shrink: 0;
-  position: absolute;
+  position: fixed;
   display: none;
   translate: 100% 0;
   inset: 0;
