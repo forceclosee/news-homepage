@@ -28,6 +28,7 @@
 }
 
 .article-card__ranking {
+  color: var(--primary-soft-red);
   font-size: 2rem;
   font-weight: 700;
   text-box: trim-both cap alphabetic;
