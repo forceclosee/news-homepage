@@ -1,10 +1,11 @@
 .navbar-wrapper {
-  block-size: 100%;
+  display: contents;
 }
 
 .navbar {
   flex-shrink: 0;
   position: fixed;
+  z-index: 2;
   display: none;
   translate: 100% 0;
   inset: 0;
