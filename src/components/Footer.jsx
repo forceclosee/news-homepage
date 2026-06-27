@@ -9,9 +9,10 @@ export default function Footer() {
 
   return (
     <footer className="footer" inert={isMenuOpen}>
-      <p>
+      <p className="footer__text">
         Challenge by{" "}
         <a
+          className="footer__link"
           href="https://www.frontendmentor.io?ref=challenge"
           target="blank"
           rel="noopener noreferrer">
@@ -19,6 +20,7 @@ export default function Footer() {
         </a>
         . Coded by{" "}
         <a
+          className="footer__link"
           href="https://github.com/forceclosee"
           target="blank"
           rel="noopener noreferrer">

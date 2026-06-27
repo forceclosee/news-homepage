@@ -3,10 +3,9 @@
   position: relative;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  gap: clamp(1.7rem, 0.7177rem + 4.191vi, 3.4rem);
+  gap: clamp(1.2rem, 0.2177rem + 4.191vi, 2.9rem);
   background-color: var(--neutral-off-white);
   padding-inline: 1rem;
-  padding-block-start: 1.2rem;
   padding-block-end: 0.5rem;
   transition: all 0.2s ease-in-out;
 }
