@@ -1,9 +1,9 @@
 import { useContext } from "react";
 
-import { MenuContext } from "./context/MenuContext";
 import Header from "./components/Header";
 import NewsContent from "./components/NewsContent";
 import Footer from "./components/Footer";
+import { MenuContext } from "./context/MenuContext";
 
 import "./App.css";
 

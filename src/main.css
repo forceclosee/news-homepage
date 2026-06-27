@@ -1,0 +1,16 @@
+.page-wrapper {
+  min-block-size: 100svh;
+  position: relative;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: clamp(1.7rem, 0.7177rem + 4.191vi, 3.4rem);
+  background-color: var(--neutral-off-white);
+  padding-inline: 1rem;
+  padding-block-start: 1.2rem;
+  padding-block-end: 0.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.page-wrapper:has([inert]) {
+  background-color: var(--neutral-grayish-blue);
+}

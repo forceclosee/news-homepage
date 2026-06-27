@@ -1,8 +1,8 @@
 import { useContext } from "react";
 
-import { MenuContext } from "../context/MenuContext";
 import { navLink } from "../data/data";
 import HamburgerMenu from "./HamburgerMenu";
+import { MenuContext } from "../context/MenuContext";
 
 import "./Navbar.css";
 
