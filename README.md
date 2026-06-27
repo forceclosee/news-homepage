@@ -1,11 +1,11 @@
-# Frontend Mentor - News homepage solution
+# Accessible News Homepage built with React 19, CSS Grid & Custom Drawer
 
-This is a solution to the [News homepage challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [News homepage challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl). This project is a fully responsive news landing page built with React 19 and Vite. Key features include a mobile-first responsive layout powered by CSS Grid, interactive hover and focus states, a custom mobile drawer navigation featuring outside click dismissal, and accessibility integration using semantic HTML and the `inert` attribute.
 
 ## Table of contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
+  - [Features](#features)
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
@@ -18,18 +18,19 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
 
 ## Overview
 
-### The challenge
+### Features
 
-Users should be able to:
-
-- View the optimal layout for the interface depending on their device's screen size
-- See hover and focus states for all interactive elements on the page
+- **Responsive Layout:** The page adapts dynamically to different screen sizes, providing an optimal grid-based desktop layout and a stacked mobile layout.
+- **Interactive States:** Hover and focus states are implemented on all interactive elements (buttons, links, navigation items) to enhance user experience.
+- **Mobile Drawer Navigation:** A slide-out mobile drawer menu toggled by a hamburger button on smaller viewports.
+- **Outside Click Dismissal:** The mobile drawer menu automatically closes when the user clicks anywhere outside the navigation area.
+- **Accessibility (A11y):** Integrated semantic HTML5 elements, ARIA attributes for the toggle button, and the `inert` attribute to lock interaction behind the open drawer.
+- **New Articles Section:** A side panel highlighting the latest news articles with clean borders.
+- **Featured Articles:** A ranked grid displaying highlighted articles with preview images and ranking numbers.
 
 ### Screenshot
 
-<!-- isi screenshot -->
-
-![](./screenshot.jpg)
+![](./public/screenshot.png)
 
 ### Links
 
